@@ -1,1 +1,1 @@
-This app is built on React-Redux.User can filter artists and click on artist name that will diplay information about artist tour.
+This app is built on React-Redux.User can filter artists and click on artist name that will display information about artist tour.

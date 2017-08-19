@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
@@ -22,7 +21,7 @@ class SearchBar extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
          <input type="text" 
           className="form-control col-md-6 mx-auto "
           placeholder="Search artist names from list"

@@ -10,8 +10,8 @@ class ArtistList extends Component {
         <li
           key={artist.name}
           onClick={() => this.props.selectArtist(artist)}
-          className="list-group-item bg-success list-container"
-        >
+          className="list-group-item bg-success list-container">
+          <img className="img-fluid img-small " src={artist.image} alt=""/>
           {artist.name}
         </li>
       );
@@ -20,9 +20,13 @@ class ArtistList extends Component {
 
   render() {
     return (
-      <ul className="list-group-item col-md-6 mx-auto bg-warning ">
-        {this.renderList()}
-      </ul>
+           <div className="container">
+           <div className="col-md-6 float-left  ">
+          <ul className="list-group">
+          {this.renderList()}
+        </ul>
+      </div>
+      </div>
     );
   }
 }
