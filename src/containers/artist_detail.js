@@ -5,7 +5,7 @@ class ArtistDetail extends Component {
   render() {
     if (!this.props.artist) {
       
-      return <div className="container"><div className=" col-md-6 h3 mt-4 float-right ">Click on artist name to get artist tour details.</div></div>;
+      return <div className="container"><div className=" col-md-6 h3 mt-4 float-right ">Click on artist image to get artist tour details.</div></div>;
                                                                      
     }
 
@@ -13,7 +13,7 @@ class ArtistDetail extends Component {
       <div className="container">
          <div className=" col-md-6 col-sm-12 bg-primary text-white detail-wrapper float-right" >
         <h3> Artist Tour Details:</h3>
-        <img  className="img-fluid " src={this.props.artist.image} alt=''/>
+        <img  className="img-fluid img-big" src={this.props.artist.image} alt=''/>
         <div >Name: {this.props.artist.name}</div>
         <div>Location: {this.props.artist.location}</div>
         <div>Price: {this.props.artist.price}</div>

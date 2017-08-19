@@ -18,8 +18,13 @@ body {
   width:100px;
   height: 80px;
   padding-right: 10px;
-  
 }
+  .img-big{
+   width:400px;
+   height: 250px;
+  }
+  
+
 .detail-wrapper{
   margin-top: 10px;
   border-radius: 5px;
