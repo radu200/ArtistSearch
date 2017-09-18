@@ -13,7 +13,7 @@ import About from './containers/artist_detail';
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-      <BrowserRouter >
+      <BrowserRouter basename="/ArtistSearch">
        <div>
         <Switch>
           <Route exact path="/" component={App} />
