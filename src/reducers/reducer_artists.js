@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 
   const ARTIST = [
-    
+
     {
             name: 'Ed Sheeran',
             date: '17.08.2017',
@@ -70,4 +70,3 @@ export default function (state = ARTIST, action ){
         return state;
     }
 }
-

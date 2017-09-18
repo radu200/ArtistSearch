@@ -1,24 +1,180 @@
-.App {
-  text-align: center;
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: red;
+    background: url(./assets/images/albums-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+
+
+input[type=text] {
+    width: 40%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+input[type=text]:focus {
+    width: 79%;
 }
 
-.App-intro {
-  font-size: large;
+.artist-name {
+    border: 1px solid black;
+    width: 180px;
+    list-style-type: none;
+    text-align: center;
+    color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+/*image style*/
+
+.container-flex {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+}
+
+.imgHome {
+    width: 300px;
+    height: 260px;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.img-about{
+   width: 300px;
+   height: 260px;
+
+}
+.btn {
+    margin-left: 20px;
+    
+} 
+.btn:hover{
+   
+} 
+a{
+    color:#f5f5f5;
+} 
+
+a:hover{
+    color:#f5f5f5;
+    text-decoration: none;
+}
+
+
+/*end*/
+
+
+/*media queries*/
+
+@media (max-width: 991px) {
+    input[type=text] {
+        width: 60%;
+        margin-left: 10px;
+    }
+    input[type=text]:focus {
+        width: 80%;
+    }
+    .imgHome {
+        width: 500px;
+        height: 350px;
+        padding: 15px;
+        margin-left: 10px;
+    }
+     
+    .img-about{
+      width: 300px;
+        height: 250px;  
+        margin-left: -80px;
+    }
+    .btn {
+        margin-left: 53px;
+    }
+}
+
+@media ( max-width:767px) {
+    input[type=text] {
+        width: 60%;
+        margin-left: 10px;
+    }
+    input[type=text]:focus {
+        width: 90%;
+    }
+    .img-about {
+        width: 500px;
+        height: 350px;
+        padding: 15px;
+        margin-left: 0px;
+
+    }
+    .imgHome {
+        width: 500px;
+        height: 350px;
+        padding: 15px;
+        margin-left: 10px;
+    }
+    .btn {
+        margin-left: 53px;
+    }
+}
+
+@media ( max-width:575px) {
+    input[type=text] {
+        width: 60%;
+        margin-left: 10px;
+    }
+    input[type=text]:focus {
+        width: 85%;
+    }
+    .img-about {
+        width: 450px;
+        height: 310px;
+        margin-left: 0px;
+    }
+    .imgHome {
+        width: 600px;
+        height: 310px;
+        padding: 15px;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+}
+
+@media ( max-width:480px) {
+    .img-about {
+        width: 350px;
+        height: 270px;
+        padding: 10px;
+       
+    }
+    .imgHome {
+        width: 320px;
+        height: 270px;
+        padding: 15px;
+        margin-left: 0px;
+        border: none;
+    }
 }
